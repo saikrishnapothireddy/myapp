@@ -5,12 +5,17 @@ ruby "3.0.3"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.1"
+gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 
+gem 'jquery-rails'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
-
+gem 'rake', '~> 13.0', '>= 13.0.6'
+gem 'autoprefixer-rails', '~> 10.4', '>= 10.4.2.0'
+gem 'sprockets', '~> 4.0', '>= 4.0.2'
+gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5'
 # Use sqlite3 as the database for Active Record
-#gem "sqlite3", "~> 1.4"
+gem "sqlite3", "~> 1.4"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -44,7 +49,7 @@ gem "bootsnap", require: false
 
 # Use Sass to process CSS
 gem "sassc-rails"
-
+gem 'uglifier', '~> 4.2'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "image_processing", "~> 1.2"
 
