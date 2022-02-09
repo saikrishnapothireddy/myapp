@@ -5,15 +5,9 @@
     <title><%= full_title(yield(:title)) %></title>
   </head>
   <body>
-    <h1>About</h1>
+    <h1>About Me</h1>
     <p>
-      The <a href="http://www.railstutorial.org/"><em>Ruby on Rails
-      Tutorial</em></a> is a
-      <a href="http://www.railstutorial.org/book">book</a> and
-      <a href="http://screencasts.railstutorial.org/">screencast series</a>
-      to teach web development with
-      <a href="http://rubyonrails.org/">Ruby on Rails</a>.
-      This is the sample application for the tutorial.
-    </p>
+      Follow me on <%= link_to (image_tag ("instagram.svg")), "https://www.instagram.com/saikrishnapothireddy/", target: "_blank" %> <%= link_to (image_tag ("twitter.svg")), "https://twitter.com/saikrishna248", target: "_blank" %><%= link_to (image_tag ("facebook.svg")), "https://www.facebook.com/profile.php?id=100009503851220", target: "_blank" %>
+    </p>    
   </body>
 </html>
