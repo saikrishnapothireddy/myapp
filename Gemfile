@@ -14,6 +14,7 @@ gem 'rake', '~> 13.0', '>= 13.0.6'
 gem 'autoprefixer-rails', '~> 10.4', '>= 10.4.2.0'
 gem 'sprockets', '~> 4.0', '>= 4.0.2'
 gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5'
+gem 'turbolinks', '~> 5.2', '>= 5.2.1'
 # Use sqlite3 as the database for Active Record
 # gem "sqlite3", "~> 1.4"
 
