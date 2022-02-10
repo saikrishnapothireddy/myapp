@@ -43,7 +43,7 @@ class UsersController < ApplicationController
       redirect_to user_url(@user)
       # format.html { redirect_to user_url(@user), notice: "User was successfully updated." }
       # format.json { render :show, status: :ok, location: @user }
-    else
+    else      
       # format.html { render :edit, status: :unprocessable_entity }
       # format.json { render json: @user.errors, status: :unprocessable_entity }
       render 'edit'
@@ -81,7 +81,10 @@ class UsersController < ApplicationController
 
     def correct_user
       @user = User.find(params[:id])
-      redirect_to(root_url) unless current_user?(@user)
+      unless current_user?(@user)
+        flash[:notice] = "Access Denied"
+        redirect_to(root_url)
+      end
     end
 
     def admin_user
