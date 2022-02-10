@@ -29,6 +29,7 @@ class UsersController < ApplicationController
     if @user.save
       log_in @user
       flash[:success] = "Hi " + @user.name + ", Sai welcome's you to sample app!"
+      redirect_to user_url(@user)
       # format.html { redirect_to user_url(@user) }
       # format.json { render :show, status: :created, location: @user }
     else
