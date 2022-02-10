@@ -15,8 +15,11 @@ gem 'autoprefixer-rails', '~> 10.4', '>= 10.4.2.0'
 gem 'sprockets', '~> 4.0', '>= 4.0.2'
 gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5'
 gem 'turbolinks', '~> 5.2', '>= 5.2.1'
+gem 'bootstrap-will_paginate', '~> 1.0'
+gem 'will_paginate', '~> 3.3', '>= 3.3.1'
+gem 'faker', '~> 2.19'
 # Use sqlite3 as the database for Active Record
-# gem "sqlite3", "~> 1.4"
+#gem "sqlite3", "~> 1.4"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
