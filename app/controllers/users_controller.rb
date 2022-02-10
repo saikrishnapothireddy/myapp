@@ -82,7 +82,7 @@ class UsersController < ApplicationController
     def correct_user
       @user = User.find(params[:id])
       unless current_user?(@user)
-        flash[:notice] = "Access Denied"
+        flash[:danger] = "Access Denied"
         redirect_to(root_url)
       end
     end
