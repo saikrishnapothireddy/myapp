@@ -7,6 +7,20 @@ Rails.application.configure do
   config.cache_classes = true
 
   config.action_mailer.default_url_options = { :host => "demoapp2481.herokuapp.com" }
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.perform_caching = false
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      address:              'smtp.gmail.com',
+      port:                 587,
+      domain:               'website.com',
+      user_name:            'saikrishnapothireddy@gmail.com',
+      password:             'nkauxsghshhoxqii',
+      authentication:       'plain',
+      enable_starttls_auto: true,
+      openssl_verify_mode: "none"
+  }
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
@@ -68,20 +82,7 @@ Rails.application.configure do
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.perform_caching = false
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-      address:              'smtp.gmail.com',
-      port:                 587,
-      domain:               'website.com',
-      user_name:            'demoapp2481@gmail.com',
-      password:             'znfsxaulkcnyvmns',
-      authentication:       'plain',
-      enable_starttls_auto: true,
-      openssl_verify_mode: "none"
-  }
+  
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
