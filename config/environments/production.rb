@@ -2,7 +2,14 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  config.serve_static_assets = true
+  config.assets.compile = true
+  config.assets.js_compressor = :uglifier
+  config.assets.digest = true
 
+  # // delete precompiled assets
+  # bundle exec rake assets:clobber --trace
+  # RAIL_ENV=production bundle exec rake assets:clobber --trace
   # Code is not reloaded between requests.
   config.cache_classes = true
 
